@@ -1,9 +1,24 @@
+h1 {
+  text-align: center;
+  @media only screen and (max-width: 600px) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 10px;
+  }
+}
 table {
   width: 100%;
   border: 1px solid black;
   border-collapse: collapse;
   th {
     height: 70px;
+    font-size: 1.6rem;
+    @media only screen and (max-width: 600px) {
+      font-size: initial;
+    }
+    @media only screen and (min-width: 601px) and (max-width: 1200px) {
+      font-size: 1.4rem;
+    }
   }
   td {
     padding: 10px;
